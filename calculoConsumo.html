@@ -13,14 +13,25 @@
      -->
 
      <script>
+
+        function saltarLinea(){
+            
+            document.write("<br>");
+
+        }
+        
         var kilometros = 480;
         var tanque = 40;
         var kilometrosAlcohol = 300;
         var consumoGasolina = kilometros / tanque;
         var consumoGasolinaAlcohol = kilometrosAlcohol/tanque;
         document.write("Esta es la eficiencia: " + consumoGasolina);
-        document.write("<br>");
+        saltarLinea();
+        saltarLinea();
         document.write("Esta es la eficiencia con un tanque de alcohol: " + consumoGasolinaAlcohol);
+
+        
+
      </script>
 
      <!-- Si el carro usa alcohol
