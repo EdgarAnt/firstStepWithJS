@@ -14,10 +14,16 @@
 
      <script>
 
+        //funcion sin parametros
         function saltarLinea(){
             
             document.write("<br>");
 
+        }
+
+        //funcion con parametros
+        function imprimir(frase){
+            document.write(frase);
         }
         
         var kilometros = 480;
@@ -29,6 +35,10 @@
         saltarLinea();
         saltarLinea();
         document.write("Esta es la eficiencia con un tanque de alcohol: " + consumoGasolinaAlcohol);
+        imprimir("<br>");
+        imprimir("<br>");
+        imprimir("hello im writting with a function with parameters");
+
 
         
 
