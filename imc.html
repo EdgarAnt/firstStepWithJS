@@ -22,15 +22,20 @@
             saltarLinea();
         }
 
-        function calcularImc(peso, altura, nombre){
+        function calcularImc(peso, altura, nombre, peso2, altura2, nombre2){
             imc = peso / (altura * altura);
+            imc2 = peso2 / (altura2 * altura2);
+            promedio= (imc + imc2) / 2;
             imprimir("El imc es: " + imc + " de " + nombre);
+            saltarLinea();
+            imprimir("El imc es: " + imc2 + " de " + nombre2);
+            imprimir("El promedio es:" + promedio);
         }
         
 
-        calcularImc(71,1.72,"Edgar");
-        calcularImc(75,1.73,"pablo");
+        calcularImc(71,1.72,"Edgar",75,1.73,"pablo");
 
+        
     </script>
 </body>
 </html>
